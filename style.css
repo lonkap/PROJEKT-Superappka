@@ -31,3 +31,236 @@ body {
 }
 
 /* ----- zde začni psát vlastní CSS ----- */
+
+.menu
+{
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	background-color: white;
+	width: 100%;
+}
+
+.nazev
+	{
+		background-color:  #48418e;
+		color: white;
+		font-weight: 700;
+		padding: 20px 30px;
+		
+}
+.nazev:hover
+	{pointer-events: none;
+}
+li{
+	list-style: none;
+	padding: 10px 20px;
+	border-bottom: 1px solid rgba(72,65,142, 0.5);
+	margin: 0;
+	padding: 0;
+
+}
+li a
+{
+	display: block;
+	width: 100%;
+	padding:10px 20px;
+}
+
+li:hover, .button:hover{
+	background-color: #25133d;
+	color: white;
+}
+
+.menu a
+{
+	text-decoration: none;
+	color:#48418e;
+}
+
+.menu a:hover
+{
+	background-color: #25133d;
+	color: white;
+}
+
+h1
+{
+	font-size: 50px;
+	font-weight: 400;
+	color: white;
+	text-align: center;
+	margin: 0;
+	
+}
+
+h2
+{
+	font-size: 18px;
+	font-weight: 700;
+}
+
+.button
+{
+	font-size: 20px;
+	padding: 10px 20px;
+	border-radius: 4px;
+	border: 1px solid white;
+	text-decoration: none;
+	display: inline-block;
+	margin: 20px;
+	color: white;
+	
+}
+
+.podnadpis
+{
+	font-size: 36px;
+	font-weight: 300;
+	color: white;
+	text-align: center;
+}
+
+.barevny_pruh
+{
+	min-height: 450px;
+	background-image: url(images/pozadi.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+	
+}
+
+.banner
+{
+	padding: 20px;
+}
+
+.tlacitka
+{
+	text-align: center;
+}
+
+.telefon
+{
+	margin-left: 20px;
+}
+
+.tlacitka :nth-child(1)
+{
+	background-color: #48418e;
+}
+.tlacitka :nth-child(1):hover{
+	background-color: #25133d;
+	color: white;
+}
+
+.kontejner{
+	display: flex;
+	flex-direction: column;
+	padding: 20px 0;
+	align-items: center;
+	background-color: white;
+	background-image: radial-gradient(white, rgba(72,65,142, 0.2));
+}
+.ikona
+{
+	width: 30%;
+}
+
+.prvni
+{
+	padding-top: 30px;
+}
+.text{
+	flex: 0 1 40%;
+	text-align: center;
+	padding: 0 20px;
+}
+footer{
+	background-color: #48418e;
+	color: white;
+	text-align: center;
+	padding: 15px 0;
+}
+/*tablet 860-890*/
+@media  screen and (min-width:860px) {
+	h1{
+		font-size: 65px;
+	}
+	h2{
+		font-size: 20px;
+	}
+	.barevny_pruh{
+		flex-direction: row;
+	}
+	.telefon{
+		align-self: flex-end;
+	}
+	.menu li, .menu a{
+		display: inline-block;
+	}
+	.vse_bez_ruky{
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.menu{
+		flex: 1 0 200%;
+		text-align: left;
+	}
+	.nazev
+	{
+		padding: 20px 30px;
+		background-color: white;
+		color: #25133d;
+	}
+	li{
+		border-bottom: 0 ;
+	}
+	li a{
+		padding: 20px 30px;
+	}
+	h1, .podnadpis{
+		text-align: left;
+		margin-left: 30px;
+	}
+	.button
+	{
+		margin: 0 0 30px 30px;
+	}
+	.druhy
+	{
+		margin-left: 10px;
+	}
+	.vse_bez_ruky
+	{	
+	flex: 0 0 60%;
+	}
+	.telefon
+	{
+		margin-left: 0;
+		
+	}
+	.tlacitka{
+	text-align: left;
+	}
+	.podnadpis
+	{
+	font-size: 33px;
+	}
+	h1{
+		margin:60px 0 30px 30px;
+	}
+	img{
+		width: 40%;
+	}
+	@media screen and (min-width:914px) {
+		h1{
+			font-size: 73px;
+			}
+			.podnadpis{
+				font-size: 36px;
+			}
+		}
