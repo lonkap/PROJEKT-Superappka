@@ -39,6 +39,7 @@ body {
 	text-align: center;
 	background-color: white;
 	width: 100%;
+	max-width: 960px;
 }
 
 .nazev
@@ -264,3 +265,4 @@ footer{
 				font-size: 36px;
 			}
 		}
+	}
